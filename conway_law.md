@@ -49,7 +49,7 @@ conclusions and remarks
 
 After all Conway law states that the communication structure of a project, its designer organizations is the image of the system they design. This has one interesting corollary:
 
-**If the communication path between designer organizations is constrained by some rules, then the same rules would constrain the system itself as well.** Or by  the original words of Conway:
+**If the communication pathes between designer organizations are constrained by some rules (ie. there are restrictions on who can talk to whom), then the same rules would constrain the system itself as well. Or by  the original words of Conway**:
 
 > organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations. 
 
