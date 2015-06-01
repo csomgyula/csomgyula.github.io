@@ -1,1 +1,1 @@
-Not much for now, just a short article on **[Conway's law](conway_law)**.
+Not much for now, just a short article on **[Conway's law](conway_law.html)**.
