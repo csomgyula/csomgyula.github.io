@@ -41,7 +41,7 @@ There is the special case, when the two subsystems are designed by the same desi
 
 If there were no such special cases, then the mapping would be a one-to-one relation, called *isomorphism*, which informally means that the two structures would be equivalent. Due to the above special case, the mapping is not necessarrily a one-to-one relation, since different subsystems may collapse (map to) the same designer. This happens when the same designer designed different subsystems. This kind of mapping, which (a) is structure-preserving, but (b) is not necessarrily a one-to-one relation is called *homeomorphism* in math. 
 
-(If you need another sample, take the `mod 2` (ie. parity) calculation. This is also a homeomorphism, between integers and parities, where the structure is defined by the addition operator!)
+(If you need another sample, take the `mod 2` (ie. parity) calculation. This is also a homeomorphism, between integers and parities, where the structure is defined by the addition operator! This is obviously not a one-to-one mapping, but is structure preserving. Ie. the sum of the parities is always the parity of the sum.)
 
 
 conclusions and remarks
