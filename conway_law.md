@@ -7,7 +7,7 @@ Conway's law states that
 
 -- **[Melvin E. Conway: How Do Committees Invent?](http://www.melconway.com/Home/Committees_Paper.html)**
 
-A simple visual proof taken from the original paper:
+A simple visual proof using the concept of the original paper is the following:
 
 ![](conway_law.png)
 
