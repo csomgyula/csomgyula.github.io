@@ -1,1 +1,1 @@
-See [csomgyula.github.io](csomgyula.github.io)
+See [csomgyula.github.io](http://csomgyula.github.io)
