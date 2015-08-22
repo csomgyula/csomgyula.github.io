@@ -82,8 +82,8 @@ The above informal proof could be more-or-less formalized if the core terms/assu
 
 Let's collect terms first:
 
-1. **Communication structure** means the communication between designers which yields a graph-like structure, where (I) vertices are designers, and (II) edges are communication links between designers
-2. **Communication** means either direct or indirect communication between parties (see remarks for more details).
+1. **Communication structure** means the communication between designers which yields a graph-like structure, where (I) vertices represent designers, and (II) edges represent communication links between designers (who communicate each other)
+2. **Communication** means either direct or indirect communication between parties (see further questions below for more details).
 3. **Structure of the system** is the decomposition of the system into subsystems, which again yields a graph-like structure, where (I) vertices are subsystems and (II) edges are the links between subsystems directly communicating each other.
 4. **Designed-by** is the relation between a subsystem and its designer
 
@@ -99,10 +99,10 @@ In order to prove the above statement, the basic premises should be also defined
 
 Conway theorem builds upon the following premises:
 
-1. For each subsystem there is a designer who designed it (ie. the designed-by relation is defined, in fact it is an N:1 relation)
-2. If two subsystems communicate each other then there must be a contract (API or kind of) between them. 
-3. If an (API) contract exists between subsystems then there must be an agreement between the parties who designed the subsystems.
-4. If an agreement exists between parties then they should communicate each other.
+1. **Designed-by relation is well defined**: For each subsystem there is a designer who designed it (ie. the designed-by relation is defined, in fact it is an N:1 relation)
+2. **Integration relies upon (API) contracts**: If two subsystems communicate each other then there must be a contract (API or kind of) between them. 
+3. **(API) contracts relies upon agreement**: If an (API) contract exists between two subsystems then there must be an agreement between the parties who designed the subsystems.
+4. **Agreement relies upon communication**: If an agreement exists between parties then they communicate each other.
 
 ### Proof
 

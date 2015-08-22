@@ -350,8 +350,8 @@ img {
 <h3>Terms</h3>
 <p>Let's collect terms first:</p>
 <ol>
-<li><strong>Communication structure</strong> means the communication between designers which yields a graph-like structure, where (I) vertices are designers, and (II) edges are communication links between designers</li>
-<li><strong>Communication</strong> means either direct or indirect communication between parties (see remarks for more details).</li>
+<li><strong>Communication structure</strong> means the communication between designers which yields a graph-like structure, where (I) vertices represent designers, and (II) edges represent communication links between designers (who communicate each other)</li>
+<li><strong>Communication</strong> means either direct or indirect communication between parties (see further questions below for more details).</li>
 <li><strong>Structure of the system</strong> is the decomposition of the system into subsystems, which again yields a graph-like structure, where (I) vertices are subsystems and (II) edges are the links between subsystems directly communicating each other.</li>
 <li><strong>Designed-by</strong> is the relation between a subsystem and its designer</li>
 </ol>
@@ -362,10 +362,10 @@ img {
 <h3>Premises</h3>
 <p>Conway theorem builds upon the following premises:</p>
 <ol>
-<li>For each subsystem there is a designer who designed it (ie. the designed-by relation is defined, in fact it is an N:1 relation)</li>
-<li>If two subsystems communicate each other then there must be a contract (API or kind of) between them. </li>
-<li>If an (API) contract exists between subsystems then there must be an agreement between the parties who designed the subsystems.</li>
-<li>If an agreement exists between parties then they should communicate each other.</li>
+<li><strong>Designed-by relation is well defined</strong>: For each subsystem there is a designer who designed it (ie. the designed-by relation is defined, in fact it is an N:1 relation)</li>
+<li><strong>Integration relies upon (API) contracts</strong>: If two subsystems communicate each other then there must be a contract (API or kind of) between them. </li>
+<li><strong>(API) contracts relies upon agreement</strong>: If an (API) contract exists between two subsystems then there must be an agreement between the parties who designed the subsystems.</li>
+<li><strong>Agreement relies upon communication</strong>: If an agreement exists between parties then they communicate each other.</li>
 </ol>
 <h3>Proof</h3>
 <p>The proof is evident, in fact the visual proof already did the work when using the above terms/premises as evidences.</p>
