@@ -129,6 +129,8 @@ Sometimes business processes/rules span many subsystems. In this case the "contr
 
 This may yield a slight extension of Conway law (?!). That is, it might not be enough just to ensure peer-to-peer communications (associated with peer-to-peer relations between subsystems). In some cases it might be necessary to ensure communication between a set of parties.
 
+Note that from the (communication) complexity point of view this phenomenon would yield exponential complexity `O(2^n)` (ie. one has to deal with each subset of  the peers). This is in contrast with the linear `O(N)` or quadratic `O(N^2)` complexity of peer-to-peer communications (ie. linear in a tree-like structure and quadratic in a free-form graph).
+
 ### Designer is changing
 
 What does happen if the designer of a subsystem changes? How does it effect Conway law?
