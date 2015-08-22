@@ -123,7 +123,7 @@ This means that the meaning of "communication" should be probably extended to co
 
 ### Cross-system contracts
 
-Another interesting phenomenon could the following: 
+Another interesting phenomenon could be the following: 
 
 Sometimes business processes/rules span many subsystems. In this case the "contract" (participating subsystems must adhere to) does not just effect the nodes linked directly (ie. the direct communication links), but the set of participating systems taken as a whole (linked either directly or indirectly).
 

@@ -376,7 +376,7 @@ img {
 <p>For instance both webservers and web browsers should adhere to the http specification, however this does not necessarily mean that each webserver/browser developer participated in the HTTP specification or directly communicated.</p>
 <p>This means that the meaning of &quot;communication&quot; should be probably extended to cover indirect communications as well (like communication through (open) specifications).</p>
 <h3>Cross-system contracts</h3>
-<p>Another interesting phenomenon could the following: </p>
+<p>Another interesting phenomenon could be the following: </p>
 <p>Sometimes business processes/rules span many subsystems. In this case the &quot;contract&quot; (participating subsystems must adhere to) does not just effect the nodes linked directly (ie. the direct communication links), but the set of participating systems taken as a whole (linked either directly or indirectly).</p>
 <p>This may yield a slight extension of Conway law (?!). That is, it might not be enough just to ensure peer-to-peer communications (associated with peer-to-peer relations between subsystems). In some cases it might be necessary to ensure communication between a set of parties.</p>
 <p>Note that from the (communication) complexity point of view this phenomenon would yield exponential complexity <code>O(2^n)</code> (ie. one has to deal with each subset of  the peers). This is in contrast with the linear <code>O(N)</code> or quadratic <code>O(N^2)</code> complexity of peer-to-peer communications (ie. linear in a tree-like structure and quadratic in a free-form graph).</p>
