@@ -304,7 +304,7 @@ img {
 <p><img src="img/conway_law.png" /></p>
 <h3>structure of the system</h3>
 <ol>
-<li>Complex systems are tpically designed using a divide-and-conquer approach. That is <strong>the system is decomposed into smaller subsystems</strong>, until the complexity becomes managable by the individual designer (or designer group).</li>
+<li>Complex systems are typically designed using a divide-and-conquer approach. That is <strong>the system is decomposed into smaller subsystems</strong>, until the complexity becomes manageable by the individual designer (or designer group).</li>
 <li><strong>Subsystems need to communicate each other</strong> (in some meaningful way specific to the domain the system deals with). This is necessary in order to act as a whole, that is as a system.</li>
 <li><strong>Subsystems and subsystem communications define a graph-like structure</strong> where the nodes are the subsystems and the edges are the direct communication links between subsystems. </li>
 </ol>
@@ -312,7 +312,7 @@ img {
 <ol>
 <li><strong>Every subsystem is <em>designed by</em> a designer</strong> (or designer group), which then creates a mapping from subsystems to designers (or designer groups). </li>
 </ol>
-<p>Note that: The above <em>design by</em> relation is called an <code>N:1</code> relation in the database engineering world, since (a) the same designer could design many subsysems and (b) each subsystem has a designer.</p>
+<p>Note that: The above <em>design by</em> relation is called an <code>N:1</code> relation in the database engineering world, since (a) the same designer could design many subsystems and (b) each subsystem has a designer.</p>
 <h3>relation between system- and human communication links</h3>
 <ol>
 <li><strong>When two subsystems communicate each other, they require an agreed upon contract which governs their communication.</strong> </li>
@@ -339,47 +339,46 @@ img {
 </ul>
 <p>It is the latter which shares some relation with the organization's static structure. Ie. the communication politics/constraints could be rather static, which leads to the following:</p>
 <h3>Communication constraints</h3>
-<p>Another important practical consideration is the following:</p>
-<p>If the communication pathes between designer organizations are constrained by some rules (ie. there are restrictions on who can talk to whom), then the same rules would constrain the system itself as well. Or by  the original words of Conway:</p>
+<p>If the communication paths between designer organizations are constrained by some rules (ie. there are restrictions on who can talk to whom), then the same rules would constrain the system itself as well. Or by  the original words of Conway:</p>
 <blockquote>
 <p>organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations. </p>
 </blockquote>
 <h3>Developers vs. designers</h3>
-<p>In the IT world there's a tendency to blur the frontier between designers and programmers (ie. <em>eat your own dog food</em>). Hence within the IT domain, nowdays one may replace <em>designers</em> with <em>developers</em> in the above statement. Note that there is an emphasis on &quot;IT domain&quot;, since Conway law applies to other domains as well, not just to the IT domain.</p>
+<p>In the IT world there's a tendency to blur the frontier between designers and programmers (ie. <em>eat your own dog food</em>). Hence within the IT domain, nowadays one may replace <em>designers</em> with <em>developers</em> in the above statement. Note that there is an emphasis on &quot;IT domain&quot;, since Conway law applies to other domains as well, not just to the IT domain.</p>
 <h2>Quasi-formal proof</h2>
-<p>The above informal proof could be more-or-lass formalized if the core terms/assumptions are defined. Lets do that:</p>
+<p>The above informal proof could be more-or-less formalized if the core terms/assumptions are defined. Let's do that:</p>
 <h3>Terms</h3>
-<p>Lets collect terms first:</p>
+<p>Let's collect terms first:</p>
 <ol>
-<li><strong>Commincation structure</strong> means the communication between designers which yields a graph-like structure, where (I) vertices are designers, and (II) edges are commucation links between designers</li>
-<li><strong>Communication</strong> means either direct or indirect commication between parties (see remarks for more details).</li>
+<li><strong>Communication structure</strong> means the communication between designers which yields a graph-like structure, where (I) vertices are designers, and (II) edges are communication links between designers</li>
+<li><strong>Communication</strong> means either direct or indirect communication between parties (see remarks for more details).</li>
 <li><strong>Structure of the system</strong> is the decomposition of the system into subsystems, which again yields a graph-like structure, where (I) vertices are subsystems and (II) edges are the links between subsystems directly communicating each other.</li>
 <li><strong>Designed-by</strong> is the relation between a subsystem and its designer</li>
 </ol>
 <h3>Statement</h3>
 <p>After all the law states the following:</p>
-<p><strong>The communication structure is the homeomorph image of the system's structure using the designed-by relation as the mapping between the two</strong>.</p>
+<p><strong>The communication structure is the homeomorphic image of the system's structure using the designed-by relation as the mapping between the two</strong>.</p>
 <p>In order to prove the above statement, the basic premises should be also defined:</p>
 <h3>Premises</h3>
 <p>Conway theorem builds upon the following premises:</p>
 <ol>
-<li>For each subsystem there is a designer who designed it (ie. the designed-by relation is defined, in fact it is a N:1 relation)</li>
-<li>If two subsystems communicate each other then there must be a contract (API or kinda) between them. </li>
-<li>If an (API) contract exists between subsystems then their must be an agreement between the parties who designed the subsystems.</li>
+<li>For each subsystem there is a designer who designed it (ie. the designed-by relation is defined, in fact it is an N:1 relation)</li>
+<li>If two subsystems communicate each other then there must be a contract (API or kind of) between them. </li>
+<li>If an (API) contract exists between subsystems then there must be an agreement between the parties who designed the subsystems.</li>
 <li>If an agreement exists between parties then they should communicate each other.</li>
 </ol>
 <h3>Proof</h3>
 <p>The proof is evident, in fact the visual proof already did the work when using the above terms/premises as evidences.</p>
 <h2>Further questions</h2>
-<p>Now lets do the opposite and question the core terms/premises behind Conway law:</p>
+<p>Now let's do the opposite and question the core terms/premises behind Conway law:</p>
 <h3>Direct vs. indirect communication</h3>
 <p>IT produces many open standards/interfaces, which then yields a slightly  different type of cooperation/agreement between developers, different from direct peer-to-peer agreements. </p>
-<p>For instance both webservers and web browsers should adhere to the http specification, however this does not necessarrily mean that each webserver/browser developer participated in the HTTP specification or directly communicated.</p>
+<p>For instance both webservers and web browsers should adhere to the http specification, however this does not necessarily mean that each webserver/browser developer participated in the HTTP specification or directly communicated.</p>
 <p>This means that the meaning of &quot;communication&quot; should be probably extended to cover indirect communications as well (like communication through (open) specifications).</p>
 <h3>Cross-system contracts</h3>
 <p>Another interesting phenomenon could the following: </p>
 <p>Sometimes business processes/rules span many subsystems. In this case the &quot;contract&quot; (participating subsystems must adhere to) does not just effect the nodes linked directly (ie. the direct communication links), but the set of participating systems taken as a whole (linked either directly or indirectly).</p>
-<p>This may yield to a slight extension of Conway law (?!). That is, it might not be enough to ensure communication associated with peer-to-peer relations between subsystem. In some cases it might be necessarry to ensure communication between a set of parties.</p>
+<p>This may yield a slight extension of Conway law (?!). That is, it might not be enough just to ensure peer-to-peer communications (associated with peer-to-peer relations between subsystems). In some cases it might be necessary to ensure communication between a set of parties.</p>
 <h2>History</h2>
 <ul>
 <li>2015.08.22 - Description of a common misunderstanding, added quasi-formal proof</li>

@@ -21,7 +21,7 @@ A simple visual proof using the concept of the original paper is the following:
 
 ### structure of the system
 
-1. Complex systems are tpically designed using a divide-and-conquer approach. That is **the system is decomposed into smaller subsystems**, until the complexity becomes managable by the individual designer (or designer group).
+1. Complex systems are typically designed using a divide-and-conquer approach. That is **the system is decomposed into smaller subsystems**, until the complexity becomes manageable by the individual designer (or designer group).
 2. **Subsystems need to communicate each other** (in some meaningful way specific to the domain the system deals with). This is necessary in order to act as a whole, that is as a system.
 3. **Subsystems and subsystem communications define a graph-like structure** where the nodes are the subsystems and the edges are the direct communication links between subsystems. 
 
@@ -29,7 +29,7 @@ A simple visual proof using the concept of the original paper is the following:
 
 1. **Every subsystem is *designed by* a designer** (or designer group), which then creates a mapping from subsystems to designers (or designer groups). 
 
-Note that: The above *design by* relation is called an `N:1` relation in the database engineering world, since (a) the same designer could design many subsysems and (b) each subsystem has a designer.
+Note that: The above *design by* relation is called an `N:1` relation in the database engineering world, since (a) the same designer could design many subsystems and (b) each subsystem has a designer.
 
 ### relation between system- and human communication links
 
@@ -65,27 +65,25 @@ It is the latter which shares some relation with the organization's static struc
 
 ### Communication constraints
 
-Another important practical consideration is the following:
-
-If the communication pathes between designer organizations are constrained by some rules (ie. there are restrictions on who can talk to whom), then the same rules would constrain the system itself as well. Or by  the original words of Conway:
+If the communication paths between designer organizations are constrained by some rules (ie. there are restrictions on who can talk to whom), then the same rules would constrain the system itself as well. Or by  the original words of Conway:
 
 > organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations. 
 
 ### Developers vs. designers
 
-In the IT world there's a tendency to blur the frontier between designers and programmers (ie. *eat your own dog food*). Hence within the IT domain, nowdays one may replace *designers* with *developers* in the above statement. Note that there is an emphasis on "IT domain", since Conway law applies to other domains as well, not just to the IT domain.
+In the IT world there's a tendency to blur the frontier between designers and programmers (ie. *eat your own dog food*). Hence within the IT domain, nowadays one may replace *designers* with *developers* in the above statement. Note that there is an emphasis on "IT domain", since Conway law applies to other domains as well, not just to the IT domain.
 
 Quasi-formal proof
 --
 
-The above informal proof could be more-or-lass formalized if the core terms/assumptions are defined. Lets do that:
+The above informal proof could be more-or-less formalized if the core terms/assumptions are defined. Let's do that:
 
 ### Terms
 
-Lets collect terms first:
+Let's collect terms first:
 
-1. **Commincation structure** means the communication between designers which yields a graph-like structure, where (I) vertices are designers, and (II) edges are commucation links between designers
-2. **Communication** means either direct or indirect commication between parties (see remarks for more details).
+1. **Communication structure** means the communication between designers which yields a graph-like structure, where (I) vertices are designers, and (II) edges are communication links between designers
+2. **Communication** means either direct or indirect communication between parties (see remarks for more details).
 3. **Structure of the system** is the decomposition of the system into subsystems, which again yields a graph-like structure, where (I) vertices are subsystems and (II) edges are the links between subsystems directly communicating each other.
 4. **Designed-by** is the relation between a subsystem and its designer
 
@@ -93,7 +91,7 @@ Lets collect terms first:
 
 After all the law states the following:
 
-**The communication structure is the homeomorph image of the system's structure using the designed-by relation as the mapping between the two**.
+**The communication structure is the homeomorphic image of the system's structure using the designed-by relation as the mapping between the two**.
 
 In order to prove the above statement, the basic premises should be also defined:
 
@@ -101,9 +99,9 @@ In order to prove the above statement, the basic premises should be also defined
 
 Conway theorem builds upon the following premises:
 
-1. For each subsystem there is a designer who designed it (ie. the designed-by relation is defined, in fact it is a N:1 relation)
-2. If two subsystems communicate each other then there must be a contract (API or kinda) between them. 
-3. If an (API) contract exists between subsystems then their must be an agreement between the parties who designed the subsystems.
+1. For each subsystem there is a designer who designed it (ie. the designed-by relation is defined, in fact it is an N:1 relation)
+2. If two subsystems communicate each other then there must be a contract (API or kind of) between them. 
+3. If an (API) contract exists between subsystems then there must be an agreement between the parties who designed the subsystems.
 4. If an agreement exists between parties then they should communicate each other.
 
 ### Proof
@@ -113,13 +111,13 @@ The proof is evident, in fact the visual proof already did the work when using t
 Further questions
 --
 
-Now lets do the opposite and question the core terms/premises behind Conway law:
+Now let's do the opposite and question the core terms/premises behind Conway law:
 
 ### Direct vs. indirect communication
 
 IT produces many open standards/interfaces, which then yields a slightly  different type of cooperation/agreement between developers, different from direct peer-to-peer agreements. 
 
-For instance both webservers and web browsers should adhere to the http specification, however this does not necessarrily mean that each webserver/browser developer participated in the HTTP specification or directly communicated.
+For instance both webservers and web browsers should adhere to the http specification, however this does not necessarily mean that each webserver/browser developer participated in the HTTP specification or directly communicated.
 
 This means that the meaning of "communication" should be probably extended to cover indirect communications as well (like communication through (open) specifications).
 
@@ -129,7 +127,7 @@ Another interesting phenomenon could the following:
 
 Sometimes business processes/rules span many subsystems. In this case the "contract" (participating subsystems must adhere to) does not just effect the nodes linked directly (ie. the direct communication links), but the set of participating systems taken as a whole (linked either directly or indirectly).
 
-This may yield to a slight extension of Conway law (?!). That is, it might not be enough to ensure communication associated with peer-to-peer relations between subsystem. In some cases it might be necessarry to ensure communication between a set of parties.
+This may yield a slight extension of Conway law (?!). That is, it might not be enough just to ensure peer-to-peer communications (associated with peer-to-peer relations between subsystems). In some cases it might be necessary to ensure communication between a set of parties.
 
 History
 --
