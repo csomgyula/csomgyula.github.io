@@ -106,7 +106,7 @@ Conway theorem builds upon the following premises:
 
 ### Proof
 
-The proof is evident, in fact the visual proof already did the work when using the above terms/premises as evidences.
+The proof is evident, in fact the visual proof already did the work when using the above terms/premises as evidences. That is to say, if the above premises are true, then Conway law is true as well.
 
 Further questions
 --
@@ -128,6 +128,11 @@ Another interesting phenomenon could the following:
 Sometimes business processes/rules span many subsystems. In this case the "contract" (participating subsystems must adhere to) does not just effect the nodes linked directly (ie. the direct communication links), but the set of participating systems taken as a whole (linked either directly or indirectly).
 
 This may yield a slight extension of Conway law (?!). That is, it might not be enough just to ensure peer-to-peer communications (associated with peer-to-peer relations between subsystems). In some cases it might be necessary to ensure communication between a set of parties.
+
+### Designer is changing
+
+What does happen if the designer of a subsystem changes? How does it effect Conway law?
+
 
 History
 --
