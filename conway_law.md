@@ -2,7 +2,7 @@ An introduction and proof of Conway law
 ==
 
 By Gyula Csom  
-Updated: 2015.08.24.  
+Updated: 2015.08.25.  
 Download: [Conway_law.pdf](Conway_law.pdf)
 
 Visual proof
@@ -155,7 +155,6 @@ Another basic assumption behind the law is that communication happens in a peer-
 
 For instance a set of three designers who design three different but related subsystems could discuss one shared topic in a peer-to-peer manner. This would then lead to at least 2-3 separate discussions between the pairs of peers until a mutual agreement is reached. Instead of this it could more effective to hold just one session where each designer participate.
 
-Since in this case the quantity would yield an exponential
 
 History
 --
