@@ -137,27 +137,30 @@ One basic term/assumption behind the law is (I) communication and (II) the fact 
 
 **In the IT domain it is very common to produce open interfaces, when direct/online communication between designers is not (always) the norm. In fact open systems might yield a slightly different type of cooperation/agreement between developers, different from direct peer-to-peer agreements.**
 
+![](img/conway_indirect.png)
+
 For instance both webservers and web browsers should adhere to the http specification. However this does not necessarily mean that each webserver/browser developer participated in the http specification or directly communicated each other. In fact this would be unrealistic. Instead reading the http specification and probably googling the web and participating in open conversations could be just enough to implement a standard compliant web server or web browser.
 
 Formally speaking, this probably leads to the extension of „cooperation” and „communication". Besides direct „face-to-face” communications, we should cover indirect communications as well, like communication through (open) specifications or through any other form of communication which is not direct/online. 
 
-Practically speaking, my intuition and some experience say that even if your specification is the best-written one, it still needs some support. It could be the support directly from you, the author or the support provided by a dedicated organization (trained by you, the author) or a crowd-support provided by the community (ie. stackoverflow). In either case some form of support is necessary during the specification’s lifetime.
+Practically speaking, my intuition and some experience say that even if your specification is the best-written one, it still needs some support. It could be the support directly from you, the author or the support provided by a dedicated team (trained by you, the author) or a crowd-support provided by the community (ie. stackoverflow). In either case some form of support is necessary during the specification’s lifetime.
 
 
 ### Cross-system contracts
 
 Another basic assumption behind the law is that communication happens in a peer-to-peer manner. The peers could be either individuals or groups but in either case the communication happens between two entities. Hence rules governing communication should deal with pair of peers. The following phenomenon shows that this assumption might not be always the case:
 
-**Sometimes business processes/rules span many subsystems. In this case the "contract" (participating subsystems must adhere to) does not only effect two nodes, but could effect a wider set of participating systems (linked either directly or indirectly).**
+**Sometimes business processes/rules span many subsystems. In this case the "contract" (participating subsystems must adhere to) does not only effect two nodes, but could effect a wider set of participating systems (linked either directly or indirectly).**  
+**In this case it might not be enough just to ensure peer-to-peer communications, instead it might be necessary to ensure communication between the sets of parties.**
 
-In this case it might not be enough just to ensure peer-to-peer communications, instead it might be necessary to ensure communication between a set of parties. For instance: 
+For instance a set of three designers who design three different but related subsystems could discuss one shared topic in a peer-to-peer manner. This would then lead to at least 2-3 separate discussions between the pairs of peers until a mutual agreement is reached. Instead of this it could more effective to hold just one session where each designer participate.
 
-A set of three designers could discuss one topic in a peer-to-peer manner, which would then yield at least three separate discussions between the three pairs. Sometimes it could more effective if they hold only one session where each designer participated.
-
+Since in this case the quantity would yield an exponential
 
 History
 --
 
+* 2015.08.25 - Added graphic to illustrate indirect communication 
 * 2015.08.24 - Editorial updates
 * 2015.08.22 - Description of a common misunderstanding, added quasi-formal proof
 * 2015.06.01 - Original version
