@@ -180,8 +180,9 @@ From the communication point of view, cross-system rules is a phenomenom which p
 History
 --
 
-* 2015.08.29 - Added abstract and further details to cross-system contracts 
-* 2015.08.25 - Added graphic to illustrate indirect communication 
-* 2015.08.24 - Editorial updates
-* 2015.08.22 - Description of a common misunderstanding, added quasi-formal proof
-* 2015.06.01 - Original version
+* 8/29/2015 - Added abstract and further details to cross-system contracts 
+* 8/25/2015 - Added graphic to illustrate indirect communication 
+* 8/24/2015 - Editorial updates
+* 8/22/2015 - Description of a common misunderstanding, added quasi-formal proof
+* 6/1/2015 - Original version
+
