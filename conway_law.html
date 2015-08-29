@@ -295,36 +295,47 @@ img {
 <p>By Gyula Csom<br />
 Updated: 2015.08.25.<br />
 Download: <a href="Conway_law.pdf">Conway_law.pdf</a></p>
-<h2>Visual proof</h2>
-<h3>Conway law</h3>
-<p>Conway's law states that</p>
+<h2>Abstract</h2>
+<p>There's a recent interest in Conway law which states that there's a strong structural relationship between the design of a system and the organization who designs it. The law states that:</p>
 <blockquote>
 <p>organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations</p>
 </blockquote>
 <p>-- <strong><a href="http://www.melconway.com/Home/Committees_Paper.html">Melvin E. Conway: How Do Committees Invent?</a></strong></p>
+<p>This renewed interest seems to be driven by the current trends in software development (like Lean development or micro-services). Meanwhile there is a common misundertsanding regarding the law which might block/weaken its application. One of the main goals of this arcticle is to clarify what Conway law states and what it does not. Namely the first section contains the following two chapters: </p>
+<ul>
+<li>The first chapter is a visual proof of Conway law. The aim is the following: due to its simplicity, by reading the proof one could easily catch what it states, which then helps to avoid the common misundertsanding.</li>
+<li>The second chapter briefly discuss some practical consequences of the law and especially it directly addresses the common misunderstanding.</li>
+</ul>
+<p>The last section tries to dig deeper and puts the focus on the basic terms/assumptions behind the law:</p>
+<ul>
+<li>The third chapter contains a quasi-formal proof. However the main goal is not the proof itself, instead the aim is to collect the basic terms and assumptions behind the law. This is necesarry in order to see its applicability.</li>
+<li>The fourth chapter contains practical questions dealing with the core of the law. They could lead to further investigation.</li>
+</ul>
+<h2>1 Visual proof</h2>
+<p>Conway law informally states that the communication structure of the designers mirorrs the structure of the system they design.</p>
 <p>A simple visual proof using the concept of the original paper is the following:</p>
 <p><img src="img/conway_law.png" /></p>
-<h3>structure of the system</h3>
+<h3>1.1 structure of the system</h3>
 <ol>
 <li>Complex systems are typically designed using a divide-and-conquer approach. That is <strong>the system is decomposed into smaller subsystems</strong>, until the complexity becomes manageable by the individual designer (or designer group).</li>
 <li><strong>Subsystems need to communicate each other</strong> (in some meaningful way specific to the domain the system deals with). This is necessary in order to act as a whole, that is as a system.</li>
 <li><strong>Subsystems and subsystem communications define a graph-like structure</strong> where the nodes are the subsystems and the edges are the direct communication links between subsystems. </li>
 </ol>
-<h3><em>designed by</em> relation</h3>
+<h3>1.2 <em>designed by</em> relation</h3>
 <ol>
 <li><strong>Every subsystem is <em>designed by</em> a designer</strong> (or designer group), which then creates a mapping from subsystems to designers (or designer groups). </li>
 </ol>
 <p><em>Note that the original paper uses the term designer. Meanwhile in the IT world there's a tendency to blur the frontier between designers and programmers (ie. eat your own dog food). Hence within the IT domain, nowadays probably one can replace designers with developers in the above statement. There is an emphasis on &quot;IT domain&quot;, since Conway law applies to other domains as well, not just to the IT domain.</em></p>
-<h3>relation between system- and human communication links</h3>
+<h3>1.3 relation between system structure and communication structure</h3>
 <ol>
 <li><strong>When two subsystems communicate each other, they require an agreed upon contract which governs their communication.</strong> </li>
-<li><strong>This contract (since it is a contract) should be based on the agreement between the corresponding designers.</strong> That is it must be the result of some cooperation between the designers of the two subsystems. Since cooperation needs some communication, hence: </li>
-<li><strong>There should be a communication link between the designers who designed such subsystems which directly communicate each other</strong>. This then creates a mapping between the (communication) links of the subsystems and the (communication) links between the designers who designed them. </li>
+<li><strong>This contract (since it is a contract) should be based on the mutual agreement between the corresponding designers.</strong> That is it must be the result of some cooperation between the designers of the two subsystems. Since cooperation needs some communication, hence: </li>
+<li><strong>There should be a communication link between the designers who designed subsystems which directly communicate each other</strong>. This then creates a mapping between the (communication) links of the subsystems and the (communication) links between the designers who designed them. </li>
 </ol>
 <p><em>Note that there is a special case, when two subsystems are designed by the same designer. If we want to deal with this situation as well, then generally we can say the following. Each link between subsystems is either (a) mapped to the same designer if she designed both systems or (b) mapped to two designers if different persons (groups) designed them. Either the designer is the same, or at least they communicate each other.</em></p>
-<h2>Practical considerations</h2>
-<h3>A common misunderstanding</h3>
-<p>A common misunderstanding of the law is that (it states that) every system mirrors the static structure of the organization who designed it. Conway law does not state that:</p>
+<h2>2 Practical considerations</h2>
+<h3>2.1 A common misunderstanding</h3>
+<p>A common misunderstanding of the law is that (it states that) every system mirrors the static structure of the organization who designed it. However Conway law does not state that:</p>
 <ul>
 <li>The &quot;static structure&quot; often means the functional decomposition of the organization, ie. the organization split into functional organization units dealing with regular/recurring tasks.</li>
 <li>Meanwhile &quot;organization structure&quot; in Conway law does not mean anything but the communication structure during the design of the system and between the designers of the system. </li>
@@ -332,19 +343,20 @@ Download: <a href="Conway_law.pdf">Conway_law.pdf</a></p>
 <p>If we want to seek a common term that is close to the above meaning then it would be rather the &quot;dynamic structure&quot; or &quot;project structure&quot; of the organization. But even this could be different (ie. if the project structure diverges from the real relationship between designers). </p>
 <p>When Conway law speaks about organization structure it speaks about two things:</p>
 <ul>
-<li>the communication structure, ie. the communication of designers</li>
-<li>the politics governing/constraining such communication</li>
+<li>the communication of designers</li>
+<li>the policies governing such communication</li>
 </ul>
 <p>It is the latter which shares some commonalities with the organization's static structure - policies could be rather static (slowly changing). This leads to the following:</p>
-<h3>Communication vs system constraints</h3>
+<h3>2.2 Communication vs system constraints</h3>
 <p>If the communication between designers are constrained by some rules (ie. there are restrictions on who can talk to whom), then the same rules would constrain the system itself as well. This is written by Conway as follows:</p>
 <blockquote>
 <p>organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations. </p>
 </blockquote>
-<h2>Quasi-formal proof</h2>
+<p>In explicit terms it means that if for some reason two designers are not allowed to talk to each other then the subsystems they design cannot communicate either. Hence those systems must remain separated and cannot be (directly) integrated. Whether it is actually a problem depends on the current system under design. However in general if you tend to push artificial restrictions on communication then sooner or later you might experience design problems with your systems.</p>
+<h2>3 Quasi-formal proof</h2>
 <p>The above visual proof could be more-or-less formalized if the core terms/assumptions are defined. This is what we do in this chapter. However:</p>
 <p><em>Note that the emphasis is not on the formal proof. Personally I think that the original paper speaks for itself, so does the visual proof above. Instead we focus on collecting the core assumptions behind the law. This is the main goal: it is necessary to see the assumptions behind the law in order to see its applicability.</em></p>
-<h3>Terms</h3>
+<h3>3.1 Terms</h3>
 <p>Let's collect terms first:</p>
 <ol>
 <li><strong>Communication structure</strong> means the communication between designers which yields a graph-like structure, where (I) vertices represent designers, and (II) edges represent communications between designers, ie. two designers are linked iff they communicate. </li>
@@ -357,21 +369,21 @@ Download: <a href="Conway_law.pdf">Conway_law.pdf</a></p>
 <li>In case of groups communication means that some individual in one group communicate some individual in the other group.</li>
 <li>When a subsystem is designed by more than one individual, designed by means (maps to) the whole group containing every designer who contributed to the design. </li>
 </ul>
-<h3>Statement</h3>
+<h3>3.2 Statement</h3>
 <p>After all the law states the following:</p>
 <p><strong>The communication structure is the homomorphic image of the system structure using the designed-by relation as the mapping.</strong></p>
 <p><em>Note that <a href="https://en.wikipedia.org/wiki/Group_homomorphism">homomorphism</a> is used in the algebraic sense and must not be confused with the similar but different term: <a href="https://en.wikipedia.org/wiki/Homeomorphism_%28graph_theory%29">homeomorphism</a>. The former is a weaker statement, means that the communication structure is a (structure preserving) projection of the system structure, however it doesn’t mean the opposite. Meanwhile the latter would mean that the two structures are equivalent, which is generally not true.</em></p>
 <p>In order to prove the above statement, the basic premises should be also stated:</p>
-<h3>Premises</h3>
+<h3>3.3 Premises</h3>
 <p>Conway law builds upon the following premises:</p>
 <ol>
 <li><strong>Designed-by relation</strong> is well defined: For each subsystem there is a designer who designed it (could be either an individual or a group of designers).</li>
 <li><strong>System integration relies upon contract</strong>: If two systems are integrated with each other then there must be a contract between them. In case of IT systems these contracts are typically called API-s.</li>
-<li><strong>Contract relies upon agreement</strong>: If a contract exists between two subsystems then it must be the result of an agreement between the parties who designed these systems.</li>
+<li><strong>Contract relies upon agreement</strong>: If a contract exists between two subsystems then it must be the result of the mutual agreement between the parties who designed these systems.</li>
 <li><strong>Agreement between parties relies upon communication</strong>: If an agreement exists between two parties then they communicated with each other.</li>
 </ol>
-<h3>Proof</h3>
-<p>The proof is evident, in fact the visual proof already did the work when using the above terms/premises as evidences. Let’s replay it: If two subsystems are integrated then:</p>
+<h3>3.4 Proof</h3>
+<p>The proof is evident, in fact the visual proof already did the work when using the above terms/premises as evidences. Let’s replay it: If two subsystems are directly integrated then:</p>
 <ul>
 <li>From Premise 2 it follows that there’s a contract between the systems. Hence:</li>
 <li>From Premise 3 it follows that there’s an agreement between their designers. Hence:</li>
@@ -380,22 +392,27 @@ Download: <a href="Conway_law.pdf">Conway_law.pdf</a></p>
 <p>That is if there’s an integration link between the two subsystems then there’s a communication link between their designers. Hence the designed-by relation is a homomorphism.</p>
 <p>After all we got that: if the premises hold then so does Conway law.</p>
 <p><em>Note that to be precise we should handle special cases, like the following ones: two subsystems are designed by the same designer, designer groups are not disjoint. Formally this could be handled in many different ways. The details are left to the reader.</em> </p>
-<h2>Practical questions</h2>
+<h2>4 Further questions</h2>
 <p>As mentioned before the main goal of the formal proof was to collect the basic assumptions behind the law. Now let’s focus on these basic terms/assumptions:</p>
-<h3>Direct vs. indirect communication</h3>
+<h3>4.1 Open contracts</h3>
 <p>One basic term/assumption behind the law is (I) communication and (II) the fact that integration needs contracts, which then needs human cooperation and communication. The following phenomenon shows that this term/assumption might not be that trivial:</p>
 <p><strong>In the IT domain it is very common to produce open interfaces, when direct/online communication between designers is not (always) the norm. In fact open systems might yield a slightly different type of cooperation/agreement between developers, different from direct peer-to-peer agreements.</strong></p>
 <p><img src="img/conway_indirect.png" /></p>
 <p>For instance both webservers and web browsers should adhere to the http specification. However this does not necessarily mean that each webserver/browser developer participated in the http specification or directly communicated each other. In fact this would be unrealistic. Instead reading the http specification and probably googling the web and participating in open conversations could be just enough to implement a standard compliant web server or web browser.</p>
 <p>Formally speaking, this probably leads to the extension of „cooperation” and „communication&quot;. Besides direct „face-to-face” communications, we should cover indirect communications as well, like communication through (open) specifications or through any other form of communication which is not direct/online. </p>
 <p>Practically speaking, my intuition and some experience say that even if your specification is the best-written one, it still needs some support. It could be the support directly from you, the author or the support provided by a dedicated team (trained by you, the author) or a crowd-support provided by the community (ie. stackoverflow). In either case some form of support is necessary during the specification’s lifetime.</p>
-<h3>Cross-system contracts</h3>
+<h3>4.2 Cross-system contracts</h3>
 <p>Another basic assumption behind the law is that communication happens in a peer-to-peer manner. The peers could be either individuals or groups but in either case the communication happens between two entities. Hence rules governing communication should deal with pair of peers. The following phenomenon shows that this assumption might not be always the case:</p>
 <p><strong>Sometimes business processes/rules span many subsystems. In this case the &quot;contract&quot; (participating subsystems must adhere to) does not only effect two nodes, but could effect a wider set of participating systems (linked either directly or indirectly).</strong><br />
 <strong>In this case it might not be enough just to ensure peer-to-peer communications, instead it might be necessary to ensure communication between the sets of parties.</strong></p>
-<p>For instance a set of three designers who design three different but related subsystems could discuss one shared topic in a peer-to-peer manner. This would then lead to at least 2-3 separate discussions between the pairs of peers until a mutual agreement is reached. Instead of this it could more effective to hold just one session where each designer participate.</p>
+<p><img src="img/conway_cross_system.png" /></p>
+<p>For instance a set of three designers who design three different but related subsystems could discuss one shared topic in a peer-to-peer manner. This would then lead to at least 2-3 separate discussions between the pairs of peers until a mutual agreement is reached. Instead of this it could be more effective to hold just one session where each designer participate.</p>
+<p>This phenomenom could have practical implications both at the engineering side and the communication side:</p>
+<p>From the engineering point of view, cross-system rules increase the complexity of the system and could lead to hard-to-be-maintained designs. Such a thing breaks one of the basic principles of software design. In order to develop maintainable software we try to encapsulate related logic into separated though interconnected components. Here components could be classes as in classic OOP or services as in now-trendy micro-services. Cross-system rules break encapsulation hence we try to avoid them in system design. An interesting question is whether we can eliminate them totally. My intuition and some experience say that the answer is no: cross-cutting concerns tend to appear in complex systems. But again this is a question that needs further investigation.</p>
+<p>From the communication point of view, cross-system rules is a phenomenom which poses additional challenges for communication. In this case you have to organize discussions between sets of interested parties. Hence in its very general form it could lead to exponential complexity (ie. for a set of N designers, the number of subsets is 2^N). Hence I would say that we either have to decrease the amount of this phenomenom or build open communication environments. But again this is also a topic that needs further investigation.</p>
 <h2>History</h2>
 <ul>
+<li>2015.08.29 - Added abstract and further details to cross-system contracts </li>
 <li>2015.08.25 - Added graphic to illustrate indirect communication </li>
 <li>2015.08.24 - Editorial updates</li>
 <li>2015.08.22 - Description of a common misunderstanding, added quasi-formal proof</li>
