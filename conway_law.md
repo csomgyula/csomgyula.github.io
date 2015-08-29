@@ -2,7 +2,7 @@ An introduction and proof of Conway law
 ==
 
 By Gyula Csom  
-Updated: 2015.08.29.  
+Updated: 8/29/2015  
 Download: [Conway_law.pdf](Conway_law.pdf)
 
 Abstract
