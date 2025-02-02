@@ -44,7 +44,7 @@ Proof (0, i): 1 and 1+1 are consecutive numbers, hence from (0,i) it follows tha
 
 # Case $p_1 = 2$
 
-Statement (1, i): There is always a number not divisible by $p_1$ between $p_1$ consecutive numbers, which is trivial, since $p_1 > 1$ and two consecutive numbers are relative primes.
+Statement (1, i): There is always a number not divisible by $p_1$ between $p_1$ consecutive numbers, which is trivial, since $p_1 > 1$ and consecutive numbers are relative primes.
 
 Statement (1, ii): The $2$-nd prime is not greater than $p_1 + 1$ which follows from (1, i) and the fact that $p_1 = 2$:
 
