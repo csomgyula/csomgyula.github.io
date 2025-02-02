@@ -20,28 +20,38 @@ $$
  \forall 0 < i < k: p_i \nmid x 
 $$
 
-## Proof of theorem
+Before moving to the proof, lets first see the case of small primes:
 
-We use a double inductive proof, induction for both statements. 
+Statement A: a number and its successor is different
+Statement B: there is no number between a number and its successor
+Statement B: 1 is the smallest natural number
+Statement C: 1+1 is the smallest natural number if we leave 1
+Statement D: if a number divides another than it is smaller than the other
 
-First it is trivial for the smallest prime, $2$. For $2$ it states that there is always 
-an uneven number in $3$ consecutive numbers, which is trivial.
+Statement (0, i): There is always a number which is not 1 in 1 + 1 consecutive numbers. Which is trivial (from statement A), a number and its successor is different, cannot be both 1.
 
-Before moving to the general case, first prove the theorem for small primes$3$. It is even true for less numbers...
+Statement (0, ii): The second prime is 1 + 1
+Proof (0, i): 1 and 1+1 are consecutive numbers, hence from (0,i) it follows that one of them is not 1, hence 1+1 is not 1, since 1 is 1 (this also follows from A). Since 1+1 is not 1 from B, D it follows nothing is divisible by it and from C it follows that it is the smallest such.
 
-Statement for $3$: For $3$ the theorem states that there is always a number not divisible by $2$ and $3$ between $4$ consecutive numbers. 
+## Case $p_1 = 2$
 
-Proof for $3$: Within $4$ consecutive number there is always two numbers divisible by $3$ between them
+Statement (1, i): There is always a number not divisible by $p_1$ between $p_1$ consecutive numbers, which is trivial, since $p_1 > 1$ and two consecutive numbers are relative primes.
 
-Statement for $5$: For $5$ the theorem states that there is always a number not divisible by $2$, $3$ and $5$ between $6$ consecutive numbers. 
+Statement (1, ii): The $2$-nd prime is not greater than $p_1 + 1$ which follows from (1, i) and the fact that $p_1 = 2$:
 
-Proof for $5$: Within $6$ consecutive number there is always two numbers divisible by $5$. Between them there is always $4$ numbers not divisible by $5$, hence by the statement for $3$ there is always a number which is not divisible neither by $2$ and $3$
+- Since $p_1 + 1$ and $p_1 + 2$ are $p_1 = 2$ consecutive numbers hence from (1, i) it follows one of them is not divisible by $p_1$, and it cannot be $p_1 + 2$ because it is $2 * p_1$.
 
-Statement for $7$: For $7$ the theorem states that there is always a number not divisible by $2$, $3$, $5$ and $7$ between $8$ consecutive numbers. 
+## Case $p_2 = 3$
 
-Proof for $7$: Within $8$ consecutive numbers there is always two numbers divisible by $7$. Between them there is always $6$ numbers not divisible by $7$, hence by the statement for $5$ there is always a number which is not divisible neither by $2$, $3$ and $5$
+Statement (2, 3): For $3$ the theorem states that 
+i. There is always a number not divisible by $2$ and $3$ between $2 * p_1$ ($=p_2 + 1 = 4$) consecutive numbers. 
+ii. The $3rd$ prime is not greater than $p_2 + 2 * p_1 = p_2 + $.
 
-General statement for $p_{k+1}$: For $p_{k+1}$ the theorem states that there is always a number not divisible by $2$, $3$, ..., $p_{k+1}$ in $??? + 1$ consecutive numbers. Within $p_{k+1} + 1$ numbers theres is always $2$ numbers... HUHHH
+## Case $p_3 = 5$
+
+From that it follows that the maximum number of consecutive numbers where every number is divisible by either $p_1$ or $p_2$ is less than $1 + 2 * (p_1 - 1) + 1 = 2 * p_1$.
+
+From that it follows that the 3rd prime is less than $p_2 + 2 * p_1$
 
 ## Reference
 
