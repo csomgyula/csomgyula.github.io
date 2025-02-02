@@ -76,4 +76,5 @@ There is always a number between n and n + F(k) not divisible by p_1, p_2, ..., 
 
 # Reference
 
-- [https://en.wikipedia.org/wiki/Bertrand's_postulate](https://en.wikipedia.org/wiki/Bertrand%27s_postulate)
+- https://en.wikipedia.org/wiki/Bertrand%27s_postulate
+- https://en.wikipedia.org/wiki/Proof_of_Bertrand%27s_postulate
