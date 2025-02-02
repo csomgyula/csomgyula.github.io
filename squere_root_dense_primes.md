@@ -12,7 +12,7 @@ Theorem: $\forall i: p_i \leqq p_k \leqq p_i^2 $
 - (v)    $\forall N: p_k < N \leqq p_i^2 \implies Sieve(N, k) \leqq p_i - 1$
 - (vi)   Van prím $N$ és $N + \sqrt N$ között (picivel talán több is kijön)
 
-Széleket majd igazítani kell (egyenlőtlenségeknél +-1)
+Széleket majd ellenőrizni kell (egyenlőtlenségeknél +-1)
 
 Bizonyításvázlat:
 
