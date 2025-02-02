@@ -36,7 +36,7 @@ Statement E: 1 is not prime
 
 # Case 1
 
-Statement (0, i): There is always a number which is not 1 in 1 + 1 consecutive numbers. Which is trivial (from statement A), a number and its successor is different, cannot be both 1.
+Statement (0, i): There is always a number which is not 1 among consecutive numbers. Which is trivial (from statement A), a number and its successor is different, cannot be both 1.
 
 Statement (0, ii): The second prime is 1 + 1
 
