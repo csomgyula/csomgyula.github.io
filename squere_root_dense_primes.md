@@ -4,7 +4,7 @@ Draft, now in Hungarian
 
 Def: $Sieve(N, k)$ az első $k$ prím [Erasztotenészi szitálási](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) képességét méri $N$-nél, per definíciónem az a legnagyobb $C$, amire $N, N+1, ..., N+C-1$ mindegyike osztható az első $k$ prím valamelyikével, de $N+C$ már relatív prím mindegyikhez.
 
-Theorem: $\forall i: p_i < p_k < \leqq p_i^2 $
+Theorem: $\forall i: p_i < p_k \leqq p_i^2 $
 - (i)    $Sieve(0, k) = 1$ (trivi: 1 miatt)
 - (ii)   Sieve(1, k) = 0$ (trivi: 1 miatt)
 - (iii)  $Sieve(2, k) = p_k - 1$ (trivi: 2-re megnézhető, felette meg azért, mert $p_k$ + 1 páros) 
