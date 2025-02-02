@@ -30,12 +30,15 @@ an uneven number in $3$ consecutive numbers, which is trivial.
 Before moving to the general case, first prove the theorem for small primes$3$. It is even true for less numbers...
 
 Statement for $3$: For $3$ the theorem states that there is always a number not divisible by $2$ and $3$ between $4$ consecutive numbers. 
+
 Proof for $3$: Within $4$ consecutive number there is always two numbers divisible by $3$ between them
 
 Statement for $5$: For $5$ the theorem states that there is always a number not divisible by $2$, $3$ and $5$ between $6$ consecutive numbers. 
+
 Proof for $5$: Within $6$ consecutive number there is always two numbers divisible by $5$. Between them there is always $4$ numbers not divisible by $5$, hence by the statement for $3$ there is always a number which is not divisible neither by $2$ and $3$
 
 Statement for $7$: For $7$ the theorem states that there is always a number not divisible by $2$, $3$, $5$ and $7$ between $8$ consecutive numbers. 
+
 Proof for $7$: Within $8$ consecutive numbers there is always two numbers divisible by $7$. Between them there is always $6$ numbers not divisible by $7$, hence by the statement for $5$ there is always a number which is not divisible neither by $2$, $3$ and $5$
 
 General statement for $p_{k+1}$: For $p_{k+1}$ the theorem states that there is always a number not divisible by $2$, $3$, ..., $p_{k+1}$ in $??? + 1$ consecutive numbers. Within $p_{k+1} + 1$ numbers theres is always $2$ numbers... HUHHH
