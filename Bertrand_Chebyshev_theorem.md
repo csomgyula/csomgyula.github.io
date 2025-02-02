@@ -1,4 +1,4 @@
-# Bertrand postulate aka Bertrand-Chebyshev theorem
+# Bertrand-Chebyshev theorem
 
 The theorem states that for every n, where $p_k$ is the $k$-th prime:
 
