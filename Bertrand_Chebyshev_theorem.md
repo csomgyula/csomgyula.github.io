@@ -39,6 +39,7 @@ Statement D: if a number divides another than it is smaller than the other
 Statement (0, i): There is always a number which is not 1 in 1 + 1 consecutive numbers. Which is trivial (from statement A), a number and its successor is different, cannot be both 1.
 
 Statement (0, ii): The second prime is 1 + 1
+
 Proof (0, i): 1 and 1+1 are consecutive numbers, hence from (0,i) it follows that one of them is not 1, hence 1+1 is not 1, since 1 is 1 (this also follows from A). Since 1+1 is not 1 from B, D it follows nothing is divisible by it and from C it follows that it is the smallest such.
 
 # Case $p_1 = 2$
