@@ -38,7 +38,10 @@ Statement E: 1 is not prime
 
 Statement (0, i): There is always a number which is not 1 among consecutive numbers. Which is trivial (from statement A), a number and its successor is different, cannot be both 1.
 
-Statement (0, ii): The second prime is 1 + 1
+Statement (0, ii): The second prime is not greater than 1 + 1
+TODO
+
+Statement (0, iii): The second prime is 1 + 1
 
 Proof through (0, i): 
 
