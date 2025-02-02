@@ -61,11 +61,9 @@ Statement (1, iii): The $2$-nd prime is $p_1 + 1$
 
 # Case $p_3 = 5$
 
-Statement (2, 3):
-i. There is always a number not divisible by $2$ and $3$ between $2 * p_1$ ($=p_2 + 1 = 4$) consecutive numbers. 
-ii. The $3rd$ prime is not greater than $p_2 + 2 * p_1 = p_2 + $.
+Statement (2, i): There is always a number not divisible by $2$ and $3$ between $2 * p_1$ ($=p_2 + 1 = 4$) consecutive numbers. 
 
-# Case $p_3 = 5$
+Statement (2, ii): The $3rd$ prime is not greater than $p_2 + 2 * p_1 = p_2 + $.
 
 From that it follows that the maximum number of consecutive numbers where every number is divisible by either $p_1$ or $p_2$ is less than $1 + 2 * (p_1 - 1) + 1 = 2 * p_1$.
 
