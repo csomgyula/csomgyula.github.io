@@ -38,11 +38,11 @@ Statement E: 1 is not prime
 
 Statement (0, i): There is always a number which is not 1 among consecutive numbers. Which is trivial (from statement A), a number and its successor is different, cannot be both 1.
 
-Statement (0, ii): The second prime is not greater than 1 + 1
+Statement (0, ii): The first prime is not greater than 1 + 1
 
 Proof: TODO
 
-Statement (0, iii): The second prime is 1 + 1
+Statement (0, iii): The first prime is $1 + 1$
 
 Proof through (0, i): 
 
@@ -56,6 +56,8 @@ Statement (1, i): There is always a number not divisible by $p_1$ between $p_1$ 
 Statement (1, ii): The $2$-nd prime is not greater than $p_1 + 1$ which follows from (1, i) and the fact that $p_1 = 2$:
 
 Since $p_1 + 1$, $p_1 + 1 + 1$ are $2 = p_1$ consecutive numbers hence from (1, i) it follows one of them is not divisible by $p_1$, and it cannot be $p_1 + 1 + 1$ because $1 + 1 = 2 = p_1$, hence $p_1 + 1 + 1 = 2 * p_1$ divisible by p_1.
+
+Statement (1, iii): The $2$-nd prime is $p_1 + 1$
 
 # Case $p_2 = 3$
 
