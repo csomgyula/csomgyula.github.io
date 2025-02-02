@@ -10,11 +10,11 @@ This post contains some simple theorems related to that :-)
 
 ## Theorem
 
-For every $n$ there is an $x$ between $n$ and $n + p_k$ which is 
+For every $n$ there is an $x$ between $n$ and $n + 2^{2^n}$ which is 
 relative prime to $p_1, p_2, ..., p_k$. Formally:
 
 $$
- \forall n  \geq 0: \exists x: n < x \leqslant n + p_k:  
+ \forall n  \geq 0: \exists x: n < x \leqslant n + 2^{2^k}:  
 $$
 $$
  \forall 0 < i < k: p_i \nmid x 
