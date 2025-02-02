@@ -51,7 +51,7 @@ Proof through (0, i):
 
 # Case $p_2 = 3$
 
-Statement (1, i): There is always a number not divisible by $p_1$ between $p_1$ consecutive numbers, which is trivial, since $p_1 > 1$ and consecutive numbers are relative primes.
+Statement (1, i): There is always a number not divisible by $p_1 = 2$ between $p_1 = 2$ consecutive numbers, which is trivial, since $p_1 = 2 > 1$ and consecutive numbers are relative primes.
 
 Statement (1, ii): The $2$-nd prime is not greater than $p_1 + 1$ which follows from (1, i) and the fact that $p_1 = 2$:
 
