@@ -22,13 +22,19 @@ $$
 
 Before moving to the proof, lets first see the case of small primes:
 
-# Case 1
+# Base statements
 
 Statement A: a number and its successor is different
+
 Statement B: there is no number between a number and its successor
+
 Statement B: 1 is the smallest natural number
+
 Statement C: 1+1 is the smallest natural number if we leave 1
+
 Statement D: if a number divides another than it is smaller than the other
+
+# Case 1
 
 Statement (0, i): There is always a number which is not 1 in 1 + 1 consecutive numbers. Which is trivial (from statement A), a number and its successor is different, cannot be both 1.
 
