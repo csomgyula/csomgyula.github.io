@@ -6,7 +6,7 @@ Def: $Sieve(N, k)$ az első $k$ prím [Erasztotenészi szitálási](https://en.w
 
 Theorem: $\forall i: p_i < p_k < p_i ^ 2 $
 - (i)   $Sieve(0, k) = 1, Sieve(1, k) = 0$ (trivi 1 miatt)
-- (ii)  $Sieve(2, k) = p_k - 1$ (trivi p_k + 1 páros) 
+- (ii)  $Sieve(2, k) = p_k - 1$ (trivi 2-re megnézhető, felette $p_k$ + 1 páros) 
 - (iii) minden N-re $p_k$ és $p_i^2$ között $Sieve(N, k) \leqq Sieve(N, i)$ 
 - (iv)  minden N-re $p_k$ és $p_i^2$ között $Sieve(N, k) \leqq p_i - 1$
 - (v)   Van prím $N$ és $N + \sqrt N$ között (picivel talán több is kijön)
