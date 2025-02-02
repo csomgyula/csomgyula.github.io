@@ -48,7 +48,7 @@ Statement (1, i): There is always a number not divisible by $p_1$ between $p_1$ 
 
 Statement (1, ii): The $2$-nd prime is not greater than $p_1 + 1$ which follows from (1, i) and the fact that $p_1 = 2$:
 
-- Since $p_1 + 1$ and $p_1 + 2$ are $p_1 = 2$ consecutive numbers hence from (1, i) it follows one of them is not divisible by $p_1$, and it cannot be $p_1 + 2$ because it is $2 * p_1$.
+Since $p_1 + 1$, $p_1 + 1 + 1$ are $2 = p_1$ consecutive numbers hence from (1, i) it follows one of them is not divisible by $p_1$, and it cannot be $p_1 + 1 + 1$ because $1 + 1 = 2 = p_1$, hence $p_1 + 1 + 1 = 2 * p_1$ divisible by p_1.
 
 # Case $p_2 = 3$
 
