@@ -19,7 +19,7 @@ Bizonyításvázlat:
 - (i, ii, iii) triviális
 - (iv) abból adódik, hogy a $p_i$ feletti $p_k$ prímek $p_k$ és $p_i^2$ között nem szitálnak önállóan, oszthatók $p_i$-nél nem nagyobb prímmel
 - (v) kb. (i...iv) induktív következménye
-- (vi) az (iv) következménye
+- (vi) az (v) következménye
 
 Referencia
 
