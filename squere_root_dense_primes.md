@@ -2,7 +2,7 @@
 
 Draft, now in Hungarian
 
-Def: $Sieve(N, k)$ az első $k$ prím Erasztotenészi szitálási képességét jelenti $N$-nél, ami per definíciónem az a legnagyobb $C$, ha $N, N+1, ..., N+C-1$ mindegyike osztható az első $k$ prím valamelyikével, de $N+C$ relatív prím hoozzá.
+Def: $Sieve(N, k)$ az első $k$ prím Erasztotenészi szitálási képességét jelenti $N$-nél, ami per definíciónem az a legnagyobb $C$, amire $N, N+1, ..., N+C-1$ mindegyike osztható az első $k$ prím valamelyikével, de $N+C$ relatív prím hoozzá.
 
 Theorem: $\forall i: p_i < p_k < p_i ^ 2 $
 - (i)   $Sieve(0, k) = Sieve(1, k) = 1$ (trivi 1 miatt)
